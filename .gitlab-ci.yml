@@ -30,6 +30,8 @@ run:
 
 pages:
   stage: deploy
+  script:
+    - echo "Got here"
   artifacts:
     paths:
       - public
