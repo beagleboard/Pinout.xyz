@@ -20,7 +20,7 @@ run:
     - LANG=de make
     - LANG=es make
     - mkdir -p public
-    - cp -r output/en public/
+    - cp -r output/en/* public/
   artifacts:
     paths:
       - public
