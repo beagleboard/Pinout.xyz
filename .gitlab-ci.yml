@@ -16,17 +16,21 @@ before_script:
 run:
   script:
     - pip install -r requirements.txt
-    - make
+    - LANG=en make
+    - LANG=de make
+    - LANG=es make
+    - LANG=fr make
+    - LANG=it make
+    - LANG=tr make
+    - mkdir -p public
+    - cp -r output/en public/
   artifacts:
     paths:
-      - output/*
+      - public
 
 pages:
-  script:
-      - mkdir -p public
-      - cp -r output/en public/
   artifacts:
     paths:
-      - public/*
+      - public
   rules:
     - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
