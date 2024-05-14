@@ -29,6 +29,7 @@ run:
       - public
 
 pages:
+  stage: deploy
   artifacts:
     paths:
       - public
