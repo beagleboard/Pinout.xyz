@@ -19,7 +19,6 @@ run:
     - LANG=en make
     - LANG=de make
     - LANG=es make
-    - LANG=tr make
     - mkdir -p public
     - cp -r output/en public/
   artifacts:
