@@ -5,7 +5,7 @@ class: board
 type: other
 formfactor: Custom
 manufacturer: Company
-description: An add-on board for the Raspberry Pi
+description: An add-on board for the BeagleY-AI
 url: https://my-addon-board.com
 github: https://github.com/my-addon-board-repo.com
 schematic: https://my-addon-board-schematic.com

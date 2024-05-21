@@ -230,7 +230,7 @@ imguses = imguses.resize((400,140), Image.NEAREST)
 draw = ImageDraw.Draw(imguses)
 
 o_y = 60
-draw.text((100, o_y), "Raspberry Pi GPIO Heatmap", (60, 60, 60), font=LOGO_FONT)
+draw.text((100, o_y), "BeagleY-AI GPIO Heatmap", (60, 60, 60), font=LOGO_FONT)
 o_y += 25
 draw.text((100, o_y), LOGO_TEXT, (60, 60, 60), font=TEXT_FONT)
 

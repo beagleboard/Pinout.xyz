@@ -14,7 +14,7 @@ This license also excludes all board photography which is pinched from various s
 
 The contents of this GitHub repository are used to build http://pinout.xyz and its translated subdomains.
 
-This project aims to build a consistent workflow behind the Pinout.xyz front-end, gather useful information about the Raspberry Pi GPIO interface and add-on boards, and invite board manufacturers to produce their own "overlay" files which describe which pins their Pi add-ons use.
+This project aims to build a consistent workflow behind the Pinout.xyz front-end, gather useful information about the BeagleY-AI GPIO interface and add-on boards, and invite board manufacturers to produce their own "overlay" files which describe which pins their Pi add-ons use.
 
 We hope that by making this project open and extensible we will invite not only contributions of board pinouts, but translations too.
 
