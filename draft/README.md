@@ -1,6 +1,6 @@
 #Pinout Overlays
 
-A Pinout overlay describes the functions of the Raspberry Pi pins for a specific board.
+A Pinout overlay describes the functions of the BeagleY-AI pins for a specific board.
 An overlay is specified by a Markdown file containing mandatory and optional fields as well as an extended long-description.
 
 The Markdown overlay file must include as a minimum a name, class, type, formfactor, manufacturer, (short) description, product url, and last but not least an array defining all the pins that the board uses.

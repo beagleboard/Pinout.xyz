@@ -61,8 +61,8 @@ default_strings = {
     'buy_now': 'Buy Now',
     'translate_msg': '<a href="https://github.com/pinout-xyz/Pinout.xyz">This page needs translating, can you help?</a><br><br>',
     'browse_addons': 'Browse more HATs, pHATs and add-ons',
-    'return_home': 'Return to the Raspberry Pi GPIO Pinout',
-    'boards_title': 'Raspberry Pi HATs, pHATs &amp; Add-ons',
+    'return_home': 'Return to the BeagleY-AI GPIO Pinout',
+    'boards_title': 'BeagleY-AI HATs, pHATs &amp; Add-ons',
     'boards_subtitle': 'Click on a HAT, pHAT or add-on for more details and to see which pins it uses!'
 }
 exclude_pincounts = ['3v3-power', '5v-power', 'ground', 'iface-jtag', 'i2c', 'iface-gpclk', 'wiringpi', 'spi', 'iface-1wire']

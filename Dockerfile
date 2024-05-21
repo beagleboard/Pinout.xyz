@@ -1,5 +1,4 @@
-FROM python:2.7-slim
-
+FROM python
 COPY . ./
 
 RUN apt-get update && \
