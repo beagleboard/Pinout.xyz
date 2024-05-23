@@ -21,7 +21,7 @@ strings:
 - uses_n_gpio_pins: 'Utilizza {} GPIO pins'
 - bcm_pin_rev1_pi: 'BCM pin {} su Raspberry Rev 1 (le prime edizioni)'
 - physical_pin_n: 'Pin fisico {}'
-- wiring_pi_pin: 'Wiring Pi pin {}'
+- soc_pin: 'SoC pin {}'
 - made_by: 'Prodotto da {manufacturer}'
 - more_information: 'Maggiori informazioni'
 - github_repository: 'GitHub'

@@ -53,7 +53,7 @@ default_strings = {
     'uses_n_gpio_pins': 'Uses {} GPIO pins',
     'bcm_pin_rev1_pi': 'GPIO/BCM pin {} on Rev 1 ( very early ) Pi',
     'physical_pin_n': 'Physical/Board pin {}',
-    'wiring_pi_pin': 'Wiring Pi pin {}',
+    'soc_pin': 'SoC pin {}',
     'made_by': 'Made by {manufacturer}',
     'more_information': 'More Information',
     'github_repository': 'GitHub Repository',
@@ -65,7 +65,7 @@ default_strings = {
     'boards_title': 'BeagleY-AI HATs, pHATs &amp; Add-ons',
     'boards_subtitle': 'Click on a HAT, pHAT or add-on for more details and to see which pins it uses!'
 }
-exclude_pincounts = ['3v3-power', '5v-power', 'ground', 'iface-jtag', 'i2c', 'iface-gpclk', 'wiringpi', 'spi', 'iface-1wire']
+exclude_pincounts = ['3v3-power', '5v-power', 'ground', 'iface-jtag', 'i2c', 'iface-gpclk', 'socpin', 'spi', 'iface-1wire']
 
 
 def debug(level, string):
@@ -347,9 +347,9 @@ def render_pin_page(pin_num):
             pin_text_name = 'GPIO {}'.format(bcm)
 
             pin_subtext.append('GPIO/BCM pin {}'.format(bcm))
-        if 'wiringpi' in pin['scheme']:
-            wiringpi = pin['scheme']['wiringpi']
-            pin_subtext.append('Wiring Pi pin {}'.format(wiringpi))
+        if 'socpin' in pin['scheme']:
+            socpin = pin['scheme']['socpin']
+            pin_subtext.append('SoC pin {}'.format(socpin))
         if 'bcmAlt' in pin['scheme']:
             bcmAlt = pin['scheme']['bcmAlt']
             pin_subtext.append(strings['bcm_pin_rev1_pi'].format(bcmAlt))
@@ -361,7 +361,7 @@ def render_pin_page(pin_num):
     fn_functions = []
     pin_functions = ''
     if 'functions' in pin:
-        for x in range(6):
+        for x in range(10):
             fn_headings.append('Alt' + str(x))
 
             function = ''
@@ -459,9 +459,9 @@ def render_pin(pin_num, selected_url, overlay=None):
                 pin_subname = ' <small>({})</small>'.format(pin_name)
             pin_name = '<span class="name">GPIO {}</span>{}'.format(bcm, pin_subname)
 
-        if 'wiringpi' in pin['scheme']:
-            wiringpi = pin['scheme']['wiringpi']
-            pin_link_title.append(strings['wiring_pi_pin'].format(wiringpi))
+        if 'socpin' in pin['scheme']:
+            socpin = pin['scheme']['socpin']
+            pin_link_title.append(strings['soc_pin'].format(socpin))
 
     pin_url = base_url + slugify('pin{}_{}'.format(pin_num, pin_url))
 

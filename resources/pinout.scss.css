@@ -263,7 +263,7 @@ Footer
   padding: 20px 0px;
   text-align: center; }
   .footer a {
-    color: #5F8645; }
+    color: #23B0E6; }
 
 /*
 Left Column
@@ -327,7 +327,7 @@ nav {
 #gpio {
   width: 496px;
   min-height: 493px;
-  background: #5F8645; }
+  background: #23B0E6; }
   #gpio:before {
     content: '';
     display: block;

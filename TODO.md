@@ -1,6 +1,6 @@
 #TODO
 
-Replace WiringPi code examples with equivilent, and much more useful RPi.GPIO examples.
+Replace socpin code examples with equivilent, and much more useful RPi.GPIO examples.
 
 Add pin setup to overlays- IN/OUT, plus polarity Active HIGH/LOW
 

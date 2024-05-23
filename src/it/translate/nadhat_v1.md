@@ -48,8 +48,8 @@ To install the necessary software, use the following commands:
 ```bash
 sudo apt-get install minicom python-dev python-setuptools
 sudo apt-get install python-serial python-pip git
-sudo pip install wiringpi
-sudo apt-get install wiringpi
+sudo pip install socpin
+sudo apt-get install socpin
 cd ~
 git clone https://github.com/garatronic/nadhat
 cd nadhat/software

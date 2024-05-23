@@ -12,7 +12,7 @@ pins:
     description: bus I2C (données)
     type: GPIO/I2C
     scheme:
-      wiringpi: 8
+      socpin: 8
       bcm: 2
       bcmAlt: 0
     functions:
@@ -29,7 +29,7 @@ pins:
     description: bus I2C (horloge)
     type: GPIO/I2C
     scheme:
-      wiringpi: 9
+      socpin: 9
       bcm: 3
       bcmAlt: 1
     functions:
@@ -45,7 +45,7 @@ pins:
     name: GPCLK0
     type: GPIO
     scheme:
-      wiringpi: 7
+      socpin: 7
       bcm: 4
     functions:
       alt0: GPCLK0
@@ -59,7 +59,7 @@ pins:
     description: bus série (transmission)
     type: GPIO/UART
     scheme:
-      wiringpi: 15
+      socpin: 15
       bcm: 14
     functions:
       alt0: UART0 TXD
@@ -76,7 +76,7 @@ pins:
     description: bus série (réception)
     type: GPIO/UART
     scheme:
-      wiringpi: 16
+      socpin: 16
       bcm: 15
     functions:
       alt0: UART0 RXD
@@ -89,7 +89,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 0
+      socpin: 0
       bcm: 17
     functions:
       alt0: FL1
@@ -103,7 +103,7 @@ pins:
     description: PWM0
     type: GPIO
     scheme:
-      wiringpi: 1
+      socpin: 1
       bcm: 18
     functions:
       alt0: PCM CLK
@@ -116,7 +116,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 2
+      socpin: 2
       bcm: 27
       bcmAlt: 21
     functions:
@@ -132,7 +132,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 3
+      socpin: 3
       bcm: 22
     functions:
       alt0: SD0 CLK
@@ -144,7 +144,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 4
+      socpin: 4
       bcm: 23
     functions:
       alt0: SD0 CMD
@@ -159,7 +159,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 5
+      socpin: 5
       bcm: 24
     functions:
       alt0: SD0 DAT0
@@ -171,7 +171,7 @@ pins:
     name: MOSI
     type: GPIO/SPI
     scheme:
-      wiringpi: 12
+      socpin: 12
       bcm: 10
     functions:
       alt0: SPI0 MOSI
@@ -186,7 +186,7 @@ pins:
     name: MISO
     type: GPIO/SPI
     scheme:
-      wiringpi: 13
+      socpin: 13
       bcm: 9
     functions:
       alt0: SPI0 MISO
@@ -198,7 +198,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 6
+      socpin: 6
       bcm: 25
     functions:
       alt0: SD0 DAT1
@@ -210,7 +210,7 @@ pins:
     name: SCLK
     type: GPIO/SPI
     scheme:
-      wiringpi: 14
+      socpin: 14
       bcm: 11
     functions:
       alt0: SPI0 SCLK
@@ -223,7 +223,7 @@ pins:
     description: bus SPI (circuit 0)
     type: GPIO/SPI
     scheme:
-      wiringpi: 10
+      socpin: 10
       bcm: 8
     functions:
       alt0: SPI0 CE0
@@ -239,7 +239,7 @@ pins:
     description: bus SPI (circuit 1)
     type: GPIO/SPI
     scheme:
-      wiringpi: 11
+      socpin: 11
       bcm: 7
     functions:
       alt0: SPI0 CE1
@@ -252,7 +252,7 @@ pins:
     description: EEPROM HAT / i2c (donnée)
     type: GPIO/I2C
     scheme:
-      wiringpi: 30
+      socpin: 30
       bcm: 0
     functions:
       alt0: I2C0 SDA
@@ -265,7 +265,7 @@ pins:
     description: EEPROM HAT / i2c (horloge)
     type: GPIO/I2C
     scheme:
-      wiringpi: 31
+      socpin: 31
       bcm: 1
     functions:
       alt0: I2C0 SCL
@@ -277,7 +277,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 21
+      socpin: 21
       bcm: 5
     functions:
       alt0: GPCLK1
@@ -293,7 +293,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 22
+      socpin: 22
       bcm: 6
     functions:
       alt0: GPCLK2
@@ -306,7 +306,7 @@ pins:
     name: PWM0
     type: GPIO
     scheme:
-      wiringpi: 26
+      socpin: 26
       bcm: 12
     functions:
       alt0: PWM0
@@ -319,7 +319,7 @@ pins:
     name: PWM1
     type: GPIO
     scheme:
-      wiringpi: 23
+      socpin: 23
       bcm: 13
     functions:
       alt0: PWM1
@@ -336,7 +336,7 @@ pins:
     description: bus SPI (esclave -> maître)
     type: GPIO/SPI
     scheme:
-      wiringpi: 24
+      socpin: 24
       bcm: 19
     functions:
       alt0: PCM FS
@@ -349,7 +349,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 27
+      socpin: 27
       bcm: 16
     functions:
       alt0: FL0
@@ -362,7 +362,7 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 25
+      socpin: 25
       bcm: 26
     functions:
       alt0: SD0 DAT2
@@ -375,7 +375,7 @@ pins:
     description: bus SPI (maître -> esclave)
     type: GPIO/SPI
     scheme:
-      wiringpi: 28
+      socpin: 28
       bcm: 20
     functions:
       alt0: PCM DIN
@@ -392,7 +392,7 @@ pins:
     description: bus SPI (horloge)
     type: GPIO/SPI
     scheme:
-      wiringpi: 29
+      socpin: 29
       bcm: 21
     functions:
       alt0: PCM DOUT

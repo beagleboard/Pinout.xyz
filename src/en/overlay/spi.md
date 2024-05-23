@@ -48,20 +48,9 @@ pin:
 # SPI - Serial Peripheral Interface
 
 ---
-### SPI0 pins are GPIO 7, 8, 9, 10, 11
-### SPI1 pins are GPIO 16, 17, 18, 19, 20, 21
----
 
 Known as the four-wire serial bus, SPI lets you attach multiple compatible devices to a single set of pins by assigning them different chip-select pins.
 
 To talk to an SPI device, you assert its corresponding chip-select pin.
 
-By default the Pi allows you to use SPI0 with chip select pins on CE0 on GPIO 8 and CE1 on GPIO 7.
-
-You can enable SPI1 with a dtoverlay configured in "/boot/config.txt", for example:
-
-```
-dtoverlay=spi1-3cs
-```
-
-For full details of the SPI dtoverlays (and others) see [the Raspberry Pi dtoverlay README](https://raw.githubusercontent.com/raspberrypi/firmware/master/boot/overlays/README)
+By default the BeagleY allows you to use SPI0 with chip select pins on CE0 on GPIO 8 and CE1 on GPIO 7

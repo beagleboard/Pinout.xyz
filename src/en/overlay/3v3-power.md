@@ -3,7 +3,7 @@
 name: 3v3 Power
 class: interface
 type: pinout
-description: Raspberry Pi 3v3 Power Pins
+description: BeagleY-AI 3v3 Power Pins
 pincount: 2
 pin:
   '1':
@@ -11,10 +11,8 @@ pin:
 -->
 # 3v3 Power
 
-All Raspberry Pi models since the B+ can provide up to 500mA on the 3v3 pins, thanks to a switching regulator. In some cases it may be possible to draw more but, due to lack of documentation and testing on the actual limits, 500mA is given as a rule of thumb.
+BeagleY-AI generates it's 3v3 power from Buck 1 of the TPS65129 PMIC, meaning that it has up to 3.5A of current available. 
 
-The 3v3 supply pin on the early Raspberry Pi had a maximum available current of only 50mA.
+This rail is shared with other on-board peripherals such as the HDMI framer, USB hub and Ethernet PHY, so expect to have about 500mA usable. 
 
-The 5v supply coupled with a 3v3 regulator is recommended for powering 3.3v projects.
-
-The Piversify blog has [an exploration of the 3v3 supply rail on the Raspberry Pi B+](https://raspberrypise.tumblr.com/post/144555785379/exploring-the-33v-power-rail)
+An external supply coupled with a 3v3 regulator is recommended for powering 3.3v projects.

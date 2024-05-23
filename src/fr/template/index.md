@@ -11,7 +11,7 @@ Nous avons [ajouté un explorateur de cartes](/boards)! Utilisez le pour trouver
 ##Mais que veulent dire tous ces numéros?
 
 * BCM - numérotation Broadcom, plus communément apellée "GPIO"; utile pour travailler avec la librarie RPi.GPIO
-* WiringPi - numérotation Wiring Pi; utile pour travailler avec la librarie Wiring Pi
+* socpin - numérotation Wiring Pi; utile pour travailler avec la librarie Wiring Pi
 * Physique - numérotation correspondante à la position physique des broches sur le connecteur GPIO
 
 ##Représentation graphique du brochage

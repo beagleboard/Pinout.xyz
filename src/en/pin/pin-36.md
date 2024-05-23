@@ -1,0 +1,1 @@
+The pin is usable as a GPIO or the hardware PWM-ECAP peripheral.
