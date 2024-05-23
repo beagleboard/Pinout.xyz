@@ -44,7 +44,7 @@ img.grayscale {
 
 
 #container {
-    width:1000px;
+    width:1300px;
     margin:0 auto;
     position:relative;
     padding-top:4px;
@@ -102,7 +102,7 @@ Content Area
 #content {
     float:left;
     background:#EBE6D3;
-    width:500px;
+    width:800px;
     min-height:640px;
     position: relative;
     padding-bottom:50px;
@@ -315,7 +315,7 @@ Footer
 
 .footer {clear: both;padding: 20px 0px;text-align:center;}
 
-.footer a {color:#5F8645;}
+.footer a {color:#23B0E6;}
 
 
 /*
@@ -402,7 +402,7 @@ GPIO nav
 nav {
     position:relative;
     width:292px;
-    background:#5F8645;
+    background:#23B0E6;
     min-height:653px;
     margin-right:208px;
     border-top-right-radius:46px;

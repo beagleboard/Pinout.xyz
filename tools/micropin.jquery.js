@@ -22,8 +22,8 @@ $(document).ready(function(){
                 top:  $(this).css('line-height'),
                 background: '#073642',
                 padding: 2,
-                border: '5px solid #5F8645',
-                borderLeft: '10px solid #5F8645'
+                border: '5px solid #23B0E6',
+                borderLeft: '10px solid #23B0E6'
             })
             .addClass('pinout_popup')
             .hide();

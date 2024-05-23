@@ -1,7 +1,7 @@
 strings:
 - default_desc: 'La guía detallada sobre el pinout del GPIO de Raspberry Pi para Raspberry'
 - default_title: 'Pinout de Raspberry Pi - Pi 1, B+, Pi 2'
-- title_suffix: ' Raspberry Pi GPIO pinout'
+- title_suffix: ' BeagleY-AI GPIO Pinout'
 - home: 'Inicio'
 - boards: 'Placas'
 - details: 'Detalles'
@@ -21,7 +21,7 @@ strings:
 - uses_n_gpio_pins: 'Usa {} pines GPIO'
 - bcm_pin_rev1_pi: 'pin BCP {} en Rev 1 (primera) Pi'
 - physical_pin_n: 'pin físico {}'
-- wiring_pi_pin: 'pin Wiring Pi {}'
+- soc_pin: 'pin Wiring Pi {}'
 - made_by: 'Fabricado por {manufacturer}'
 - more_information: 'Más información'
 - github_repository: 'GitHub'

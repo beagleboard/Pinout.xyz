@@ -77,12 +77,12 @@ def bcm_to_physical(pin):
     return physical_from(pin, 'bcm')
 
 
-def wiringpi_to_physical(pin):
-    return physical_from(pin, 'wiringpi')
+def socpin_to_physical(pin):
+    return physical_from(pin, 'socpin')
 
 
 def physical_from(pin, scheme='bcm'):
-    if scheme in ['bcm', 'wiringpi']:
+    if scheme in ['bcm', 'socpin']:
         for idx in pins:
             compare_pin = pins[idx]
             if 'scheme' in compare_pin:
@@ -99,12 +99,12 @@ def physical_to_bcm(pin):
     return physical_to(pin, 'bcm')
 
 
-def physical_to_wiringpi(pin):
-    return physical_to(pin, 'wiringpi')
+def physical_to_socpin(pin):
+    return physical_to(pin, 'socpin')
 
 
 def physical_to(pin, scheme='bcm'):
-    if scheme in ['bcm', 'wiringpi']:
+    if scheme in ['bcm', 'socpin']:
         pin = pins[pin]
         if 'scheme' in pin:
             if scheme in pin['scheme']:

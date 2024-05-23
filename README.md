@@ -97,7 +97,7 @@ If you have a question about translations, raise an [issue](https://github.com/p
 
 * Redesign HTML generation and unify HTML templates into a single, translatable file
 * Add functionality to compare two or more boards, to visualise pin compatibility
-* Tool to convert WiringPi to GPIO to BCM and back
+* Tool to convert socpin to GPIO to BCM and back
 * Add as many [boards](http://pinout.xyz/boards) as possible!
 
 # Acknowledgement

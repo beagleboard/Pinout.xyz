@@ -1,5 +1,5 @@
 ---
-name: Raspberry Pi GPIO Pinout
+name: BeagleY-AI GPIO Pinout
 pins:
   '1':
     name: 3v3 Power
@@ -12,15 +12,18 @@ pins:
     description: I2C Data
     type: GPIO/I2C
     scheme:
-      wiringpi: 8
+      socpin: E11
       bcm: 2
       bcmAlt: 0
     functions:
-      alt0: I2C1 SDA
-      alt1: SMI SA3
-      alt2: DPI VSYNC
-      alt3: AVEOUT VSYNC
-      alt4: AVEIN VSYNC
+      alt0: MCU_I2C0_SDA
+      alt1: NA
+      alt2: NA
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_18 
   '4':
     name: 5v Power
     type: "+5v"
@@ -29,45 +32,54 @@ pins:
     description: I2C Clock
     type: GPIO/I2C
     scheme:
-      wiringpi: 9
+      socpin: B13
       bcm: 3
       bcmAlt: 1
     functions:
-      alt0: I2C1 SCL
-      alt1: SMI SA2
-      alt2: DPI HSYNC
-      alt3: AVEOUT HSYNC
-      alt4: AVEIN HSYNC
+      alt0: MCU_I2C0_SCL
+      alt1: NA
+      alt2: NA
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_17
   '6':
     name: Ground
     type: GND
   '7':
-    name: GPCLK0
+    name: ''
     type: GPIO
     scheme:
-      wiringpi: 7
+      socpin: W26
       bcm: 4
     functions:
-      alt0: GPCLK0
-      alt1: SMI SA1
-      alt2: DPI D0
-      alt3: AVEOUT VID0
-      alt4: AVEIN VID0
-      alt5: JTAG TDI
+      alt0: GPMC0_WAIT1
+      alt1: VOUT0_EXTPCLKIN
+      alt2: GPMC0_A21
+      alt3: UART6_RXD
+      alt4: AUDIO_EXT_REFCLK2
+      alt5: NA
+      alt6: NA
+      alt7: GPIO0_38
+      alt8: EQEP2_I
   '8':
     name: UART TX
     description: UART Transmit
     type: GPIO/UART
     scheme:
-      wiringpi: 15
+      socpin: F24
       bcm: 14
     functions:
-      alt0: UART0 TXD
-      alt1: SMI SD6
-      alt2: DSI D10
-      alt3: AVEOUT VID10
-      alt4: AVEIN VID10
-      alt5: UART1 TXD
+      alt0: MCASP0_ACLKR
+      alt1: SPI2_CLK
+      alt2: UART1_TXD
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: EHRPWM0_B
+      alt7: GPIO0_14
+      alt8: EQEP1_I
   '9':
     name: Ground
     type: GND
@@ -76,55 +88,68 @@ pins:
     description: UART Receive
     type: GPIO/UART
     scheme:
-      wiringpi: 16
+      socpin: C27
       bcm: 15
     functions:
-      alt0: UART0 RXD
-      alt1: SMI SD7
-      alt2: DPI D11
-      alt3: AVEOUT VID11
-      alt4: AVEIN VID11
-      alt5: UART1 RXD
+      alt0: MCASP0_AFSR
+      alt1: SPI2_CS0
+      alt2: UART1_RXD
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: EHRPWM0_A
+      alt7: GPIO1_13
+      alt8: EQEP1_S
   '11':
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 0
+      socpin: A26
       bcm: 17
     functions:
-      alt0: FL1
-      alt1: SMI SD9
-      alt2: DPI D13
-      alt3: UART0 RTS
-      alt4: SPI1 CE1
-      alt5: UART1 RTS
+      alt0: MCASP0_AXR2
+      alt1: SPI2_D1
+      alt2: UART1_RTSn
+      alt3: UART6_TXD
+      alt4: NA
+      alt5: ECAP2_IN_APWM_OUT
+      alt6: NA
+      alt7: GPIO1_8
+      alt8: EQEP0_B
   '12':
     name: PCM CLK
     description: PCM Clock
     type: GPIO/PCM
     scheme:
-      wiringpi: 1
+      socpin: D25
       bcm: 18
     functions:
-      alt0: PCM CLK
-      alt1: SMI SD10
-      alt2: DPI D14
-      alt3: I2CSL SDA / MOSI
-      alt4: SPI1 CE0
-      alt5: PWM0
+      alt0: MCASP0_ACLKX
+      alt1: SPI2_CS1
+      alt2: ECAP2_IN_APWM_OUT
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: GPIO1_11
+      alt8: EQEP1_A
   '13':
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 2
+      socpin: N22
       bcm: 27
       bcmAlt: 21
     functions:
-      alt0: SD0 DAT3
-      alt1: TE1
-      alt2: DPI D23
-      alt3: SD1 DAT3
-      alt4: JTAG TMS
+      alt0: GPMC0_OEn_REn
+      alt1: NA
+      alt2: MCASP1_AXR1
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: TRC_DATA8
+      alt7: GPIO0_33
+      alt8: NA
   '14':
     name: Ground
     type: GND
@@ -132,26 +157,34 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 3
+      socpin: R27
       bcm: 22
     functions:
-      alt0: SD0 CLK
-      alt1: SMI SD14
-      alt2: DPI D18
-      alt3: SD1 CLK
-      alt4: JTAG TRST
+      alt0: GPMC0_CSn0
+      alt1: I2C4_SCL
+      alt2: NA
+      alt3: MCASP2_AXR14
+      alt4: NA
+      alt5: NA
+      alt6: TRC_DATA15
+      alt7: GPIO0_41
+      alt8: NA
   '16':
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 4
+      socpin: B5
       bcm: 23
     functions:
-      alt0: SD0 CMD
-      alt1: SMI SD15
-      alt2: DPI D19
-      alt3: SD1 CMD
-      alt4: JTAG RTCK
+      alt0: MCU_UART0_CTSn
+      alt1: MCU_TIMER_IO0
+      alt2: NA
+      alt3: MCU_SPI1_D0
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_7
+      alt8: NA
   '17':
     name: 3v3 Power
     type: "+3v3"
@@ -159,26 +192,34 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 5
+      socpin: C8
       bcm: 24
     functions:
-      alt0: SD0 DAT0
-      alt1: SMI SD16
-      alt2: DPI D20
-      alt3: SD1 DAT0
-      alt4: JTAG TDO
+      alt0: WKUP_UART0_TXD
+      alt1: NA
+      alt2: MCU_SPI1_CS2
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_10
+      alt8: NA
   '19':
     name: SPI0 MOSI
     type: GPIO/SPI
     scheme:
-      wiringpi: 12
+      socpin: B12
       bcm: 10
     functions:
-      alt0: SPI0 MOSI
-      alt1: SMI SD2
-      alt2: DPI D6
-      alt3: AVEOUT VID6
-      alt4: AVEIN VID6
+      alt0: MCU_SPI0_D0
+      alt1: NA
+      alt2: NA
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_3
+      alt8: NA
   '20':
     name: Ground
     type: GND
@@ -186,51 +227,67 @@ pins:
     name: SPI0 MISO
     type: GPIO/SPI
     scheme:
-      wiringpi: 13
+      socpin: C11
       bcm: 9
     functions:
-      alt0: SPI0 MISO
-      alt1: SMI SD1
-      alt2: DPI D5
-      alt3: AVEOUT VID5
-      alt4: AVEIN VID5
+      alt0: MCU_SPI0_D1
+      alt1: NA
+      alt2: NA
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_4
+      alt8: NA
   '22':
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 6
+      socpin: P21
       bcm: 25
     functions:
-      alt0: SD0 DAT1
-      alt1: SMI SD17
-      alt2: DPI D21
-      alt3: SD1 DAT1
-      alt4: JTAG TCK
+      alt0: GPMC0_CSn1
+      alt1: I2C4_SDA
+      alt2: NA
+      alt3: MCASP2_AXR15
+      alt4: NA
+      alt5: NA
+      alt6: TRC_DATA16
+      alt7: GPIO0_42
+      alt8: NA
   '23':
     name: SPI0 SCLK
     type: GPIO/SPI
     scheme:
-      wiringpi: 14
+      socpin: A9
       bcm: 11
     functions:
-      alt0: SPI0 SCLK
-      alt1: SMI SD3
-      alt2: DPI D7
-      alt3: AVEOUT VID7
-      alt4: AVEIN VID7
+      alt0: MCU_SPI0_CLK
+      alt1: NA
+      alt2: NA
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_2
+      alt8: NA
   '24':
     name: SPI0 CE0
     description: SPI Chip Select 0
     type: GPIO/SPI
     scheme:
-      wiringpi: 10
+      socpin: C12
       bcm: 8
     functions:
-      alt0: SPI0 CE0
-      alt1: SMI SD0
-      alt2: DPI D4
-      alt3: AVEOUT VID4
-      alt4: AVEIN VID4
+      alt0: MCU_SPI0_CS0
+      alt1: NA
+      alt2: NA
+      alt3: NA
+      alt4: WKUP_TIMER_IO1
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_0
+      alt8: NA
   '25':
     name: Ground
     type: GND
@@ -239,53 +296,68 @@ pins:
     description: SPI Chip Select 1
     type: GPIO/SPI
     scheme:
-      wiringpi: 11
+      socpin: B3
       bcm: 7
     functions:
-      alt0: SPI0 CE1
-      alt1: SMI SWE_N / SRW_N
-      alt2: DPI D3
-      alt3: AVEOUT VID3
-      alt4: AVEIN VID3
+      alt0: WKUP_UART0_RXD
+      alt1: NA
+      alt2: MCU_SPI0_CS2
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_9
+      alt8: NA
   '27':
     name: EEPROM SDA
     description: HAT EEPROM i2c Data
     type: GPIO/I2C
     scheme:
-      wiringpi: 30
+      socpin: D11
       bcm: 0
     functions:
-      alt0: I2C0 SDA
-      alt1: SMI SA5
-      alt2: DPI CLK
-      alt3: AVEOUT VCLK
-      alt4: AVEIN VCLK
+      alt0: WKUP_I2C0_SDA
+      alt1: NA
+      alt2: NA
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_20
+      alt8: NA
   '28':
     name: EEPROM SCL
     description: HAT EEPROM i2c Clock
     type: GPIO/I2C
     scheme:
-      wiringpi: 31
+      socpin: B9
       bcm: 1
     functions:
-      alt0: I2C0 SCL
-      alt1: SMI SA4
-      alt2: DPI DEN
-      alt3: AVEOUT DSYNC
-      alt4: AVEIN DSYNC
+      alt0: WKUP_I2C0_SCL
+      alt1: NA
+      alt2: NA
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: MCU_GPIO0_19
+      alt8: NA
   '29':
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 21
+      socpin: B20
       bcm: 5
     functions:
-      alt0: GPCLK1
-      alt1: SMI SA0
-      alt2: DPI D1
-      alt3: AVEOUT VID1
-      alt4: AVEIN VID1
-      alt5: JTAG TDO
+      alt0: SPI0_CS0
+      alt1: NA
+      alt2: EHRPWM0_A
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: GPIO1_15
+      alt8: NA
   '30':
     name: Ground
     type: GND
@@ -293,43 +365,53 @@ pins:
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 22
+      socpin: D20
       bcm: 6
     functions:
-      alt0: GPCLK2
-      alt1: SMI SOE_N / SE
-      alt2: DPI D2
-      alt3: AVEOUT VID2
-      alt4: AVEIN VID2
-      alt5: JTAG RTCK
+      alt0: SPI0_CLK
+      alt1: CP_GEMAC_CPTS0_TS_SYNC
+      alt2: EHRPWM1_A
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: GPIO1_17
+      alt8: NA
   '32':
     name: PWM0
     type: GPIO
     description: PWM0
     scheme:
-      wiringpi: 26
+      socpin: C20
       bcm: 12
     functions:
-      alt0: PWM0
-      alt1: SMI SD4
-      alt2: DPI D8
-      alt3: AVEOUT VID8
-      alt4: AVEIN VID8
-      alt5: JTAG TMS
+      alt0: SPI0_CS1
+      alt1: CP_GEMAC_CPTS0_TS_COMP
+      alt2: EHRPWM0_B
+      alt3: ECAP0_IN_APWM_OUT
+      alt4: NA
+      alt5: MAIN_ERRORn
+      alt6: NA
+      alt7: GPIO1_16
+      alt8: NA
+      alt9: EHRPWM_TZn_IN5
   '33':
     name: PWM1
     type: GPIO
     description: PWM1
     scheme:
-      wiringpi: 23
+      socpin: E19
       bcm: 13
     functions:
-      alt0: PWM1
-      alt1: SMI SD5
-      alt2: DPI D9
-      alt3: AVEOUT VID9
-      alt4: AVEIN VID9
-      alt5: JTAG TCK
+      alt0: SPI0_D0
+      alt1: CP_GEMAC_CPTS0_HW1TSPUSH
+      alt2: EHRPWM1_B
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: GPIO1_18
+      alt8: NA
   '34':
     name: Ground
     type: GND
@@ -338,54 +420,67 @@ pins:
     description: PCM Frame Sync
     type: GPIO/PCM
     scheme:
-      wiringpi: 24
+      socpin: C26
       bcm: 19
     functions:
-      alt0: PCM FS
-      alt1: SMI SD11
-      alt2: DPI D15
-      alt3: I2CSL SCL / SCLK
-      alt4: SPI1 MISO
-      alt5: PWM1
+      alt0: MCASP0_AFSX
+      alt1: SPI2_CS3
+      alt2: AUDIO_EXT_REFCLK1
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: NA
+      alt7: GPIO1_12
+      alt8: EQEP1_B
   '36':
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 27
+      socpin: A25
       bcm: 16
     functions:
-      alt0: FL0
-      alt1: SMI SD8
-      alt2: DPI D12
-      alt3: UART0 CTS
-      alt4: SPI1 CE2
-      alt5: UART1 CTS
+      alt0: MCASP0_AXR3
+      alt1: SPI2_D0
+      alt2: UART1_CTSn
+      alt3: UART6_RXD
+      alt4: NA
+      alt5: ECAP1_IN_APWM_OUT
+      alt6: NA
+      alt7: GPIO1_7
+      alt8: EQEP0_A
   '37':
     name: ''
     type: GPIO
     scheme:
-      wiringpi: 25
+      socpin: P26
       bcm: 26
     functions:
-      alt0: SD0 DAT2
-      alt1: TE0
-      alt2: DPI D22
-      alt3: SD1 DAT2
-      alt4: JTAG TDI
+      alt0: GPMC0_BE1n
+      alt1: NA
+      alt2: NA
+      alt3: MCASP2_AXR12
+      alt4: NA
+      alt5: NA
+      alt6: TRC_DATA11
+      alt7: GPIO0_36
+      alt8: NA
   '38':
     name: PCM DIN
     description: PCM Data-In
     type: GPIO/PCM
     scheme:
-      wiringpi: 28
+      socpin: F23
       bcm: 20
     functions:
-      alt0: PCM DIN
-      alt1: SMI SD12
-      alt2: DPI D16
-      alt3: I2CSL MISO
-      alt4: SPI1 MOSI
-      alt5: GPCLK0
+      alt0: MCASP0_AXR0
+      alt1: NA
+      alt2: AUDIO_EXT_REFCLK0
+      alt3: NA
+      alt4: NA
+      alt5: NA
+      alt6: EHRPWM1_B
+      alt7: GPIO1_10
+      alt8: EQEP0_I
   '39':
     name: Ground
     type: GND
@@ -394,12 +489,15 @@ pins:
     description: PCM Data-Out
     type: GPIO/PCM
     scheme:
-      wiringpi: 29
+      socpin: B25
       bcm: 21
     functions:
-      alt0: PCM DOUT
-      alt1: SMI SD13
-      alt2: DPI D17
-      alt3: I2CSL CE
-      alt4: SPI1 SCLK
-      alt5: GPCLK1
+      alt0: MCASP0_AXR1
+      alt1: SPI2_CS2
+      alt2: ECAP1_IN_APWM_OUT
+      alt3: NA
+      alt4: NA
+      alt5: MAIN_ERRORn
+      alt6: EHRPWM1_A
+      alt7: GPIO1_9
+      alt8: EQEP0_S

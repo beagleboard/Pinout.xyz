@@ -71,16 +71,16 @@ def physical_to_bcm(pin):
     return None
 
 
-def physical_to_wiringpi(pin):
+def physical_to_socpin(pin):
     pin = pins[pin]
     if 'scheme' in pin:
-        if 'wiringpi' in pin['scheme']:
-            return str(pin['scheme']['wiringpi'])
+        if 'socpin' in pin['scheme']:
+            return str(pin['scheme']['socpin'])
     return None
 
 
 def physical_to(pin, scheme='bcm'):
-    if scheme in ['bcm', 'wiringpi']:
+    if scheme in ['bcm', 'socpin']:
         pin = pins[pin]
         if 'scheme' in pin:
             if scheme in pin['scheme']:

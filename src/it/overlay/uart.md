@@ -17,7 +17,7 @@ pin:
 -->
 #UART - Universal Asynchronous Receiver/Transmitter
 
-###I due pin UART in WiringPi sono il 15 e il 16.
+###I due pin UART in socpin sono il 15 e il 16.
 
 UART è una maniera facile e semplice per collegare un Arduino (o un ATmega bootloaded) con il tuo Raspberry. Devi, tuttavia, 
 fare attenzione alla differenza di tensione tra le due periferiche: il Raspberry è a 3.3V, e l'Arduino invece a 5V. Se 
@@ -27,11 +27,11 @@ Personalmente preferisco costruire un circuito con un Arduino Bootloaded ATmega 
 per prendere la linea a 5V del Raspberry e convertirla in 3.3V. L'ATmega 328 sembra piuttosto soddisfatto di funzionare a 3.3V con un 
 cristallo a 16Mhz, e così ottieni un clone di Arduino con una logica a 3.3V.
 
-Se hai WiringPi-Python installato, questo esempio in python apre l'UART del Raspberry a 9600baud e ci scrive 'ciao mondo!'
+Se hai socpin-Python installato, questo esempio in python apre l'UART del Raspberry a 9600baud e ci scrive 'ciao mondo!'
 
 ```python
-import wiringpi
-wiringpi.wiringPiSetup()
-serial = wiringpi.serialOpen('/dev/ttyAMA0',9600)
-wiringpi.serialPuts(serial,'ciao mondo!')
+import socpin
+socpin.socpinSetup()
+serial = socpin.serialOpen('/dev/ttyAMA0',9600)
+socpin.serialPuts(serial,'ciao mondo!')
 ```

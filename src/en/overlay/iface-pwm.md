@@ -3,7 +3,7 @@
 name: PWM
 class: interface
 type: pinout
-description: Raspberry Pi PWM pins
+description: BeagleY-AI PWM pins
 pin:
   '32':
     name: PWM0
