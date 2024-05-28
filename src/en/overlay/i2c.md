@@ -14,6 +14,14 @@ pin:
     name: Clock
     direction: both
     active: high
+  '15':
+    name: I2C4 Clock*
+    direction: both
+    active: high
+  '22':
+    name: I2C4 Data*
+    direction: both
+    active: high
   '27':
     name: EEPROM Data
     direction: both
@@ -49,3 +57,5 @@ bus.write_byte_data(DEVICE_ADDR, 0x00, 0x01)
 ```
 
 On BeagleY-AI, GPIO 0 and GPIO 1 are shared by the PMIC, Core Rail DCDC converter, Board ID EEPROM and External RTC and exposed as I2C0 - while they can be used as an alternate I2C bus, this is actively discouraged unless you are an advanced user and know what you're doing.
+
+(*) BeagleY-AI can make an additional I2C interface available (I2C4) via Header Pins 15 and 22 respectively. 

@@ -1,4 +1,6 @@
-# Pinout.xyz
+# pinout.beagleboard.org
+
+Based on Pinout.xyz.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a>
 
@@ -102,7 +104,7 @@ If you have a question about translations, raise an [issue](https://github.com/p
 
 # Acknowledgement
 
-Maintainers: [@Gadgetoid](https://github.com/Gadgetoid) and [@RogueM](https://github.com/RogueM)
+Maintainers: [@beagleboardorg](https://github.com/Gadgetoid) and [@RogueM](https://github.com/RogueM)
 
 GPIO Zero code examples by: [@bennuttall](https://github.com/bennuttall)
 
