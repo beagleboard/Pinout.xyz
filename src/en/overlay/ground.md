@@ -3,7 +3,7 @@
 name: Ground
 class: interface
 type: pinout
-description: Raspberry Pi Ground Pins
+description: BeagleY-AI Ground Pins
 pincount: 1
 pin:
   '6':
@@ -17,7 +17,7 @@ pin:
 -->
 # Ground
 
-The Ground pins on the Raspberry Pi are all electrically connected, so it doesn't matter
+The Ground pins on BeagleY-AI are all electrically connected, so it doesn't matter
 which one you use if you're wiring up a voltage supply.
 
 Generally the one that's most convenient or closest to the rest of your connections is tidier

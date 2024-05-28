@@ -362,13 +362,10 @@ def render_pin_page(pin_num):
     pin_functions = ''
     if 'functions' in pin:
         for x in range(10):
-            fn_headings.append('Alt' + str(x))
-
-            function = ''
             if 'alt' + str(x) in pin['functions']:
+                fn_headings.append('Alt' + str(x))
                 function = pin['functions']['alt' + str(x)]
-
-            fn_functions.append(function)
+                fn_functions.append(function)
 
         pin_functions = '''<table class="pin-functions">
         <thead>

@@ -17,12 +17,6 @@ pins:
       bcmAlt: 0
     functions:
       alt0: MCU_I2C0_SDA
-      alt1: NA
-      alt2: NA
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_18 
   '4':
     name: 5v Power
@@ -37,12 +31,12 @@ pins:
       bcmAlt: 1
     functions:
       alt0: MCU_I2C0_SCL
-      alt1: NA
-      alt2: NA
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
+      alt1: ''
+      alt2: ''
+      alt3: ''
+      alt4: ''
+      alt5: ''
+      alt6: ''
       alt7: MCU_GPIO0_17
   '6':
     name: Ground
@@ -59,8 +53,6 @@ pins:
       alt2: GPMC0_A21
       alt3: UART6_RXD
       alt4: AUDIO_EXT_REFCLK2
-      alt5: NA
-      alt6: NA
       alt7: GPIO0_38
       alt8: EQEP2_I
   '8':
@@ -74,9 +66,6 @@ pins:
       alt0: MCASP0_ACLKR
       alt1: SPI2_CLK
       alt2: UART1_TXD
-      alt3: NA
-      alt4: NA
-      alt5: NA
       alt6: EHRPWM0_B
       alt7: GPIO0_14
       alt8: EQEP1_I
@@ -94,9 +83,6 @@ pins:
       alt0: MCASP0_AFSR
       alt1: SPI2_CS0
       alt2: UART1_RXD
-      alt3: NA
-      alt4: NA
-      alt5: NA
       alt6: EHRPWM0_A
       alt7: GPIO1_13
       alt8: EQEP1_S
@@ -111,9 +97,7 @@ pins:
       alt1: SPI2_D1
       alt2: UART1_RTSn
       alt3: UART6_TXD
-      alt4: NA
       alt5: ECAP2_IN_APWM_OUT
-      alt6: NA
       alt7: GPIO1_8
       alt8: EQEP0_B
   '12':
@@ -127,10 +111,6 @@ pins:
       alt0: MCASP0_ACLKX
       alt1: SPI2_CS1
       alt2: ECAP2_IN_APWM_OUT
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: GPIO1_11
       alt8: EQEP1_A
   '13':
@@ -142,14 +122,9 @@ pins:
       bcmAlt: 21
     functions:
       alt0: GPMC0_OEn_REn
-      alt1: NA
       alt2: MCASP1_AXR1
-      alt3: NA
-      alt4: NA
-      alt5: NA
       alt6: TRC_DATA8
       alt7: GPIO0_33
-      alt8: NA
   '14':
     name: Ground
     type: GND
@@ -162,13 +137,9 @@ pins:
     functions:
       alt0: GPMC0_CSn0
       alt1: I2C4_SCL
-      alt2: NA
       alt3: MCASP2_AXR14
-      alt4: NA
-      alt5: NA
       alt6: TRC_DATA15
       alt7: GPIO0_41
-      alt8: NA
   '16':
     name: ''
     type: GPIO
@@ -178,13 +149,8 @@ pins:
     functions:
       alt0: MCU_UART0_CTSn
       alt1: MCU_TIMER_IO0
-      alt2: NA
       alt3: MCU_SPI1_D0
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_7
-      alt8: NA
   '17':
     name: 3v3 Power
     type: "+3v3"
@@ -196,14 +162,8 @@ pins:
       bcm: 24
     functions:
       alt0: WKUP_UART0_TXD
-      alt1: NA
       alt2: MCU_SPI1_CS2
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_10
-      alt8: NA
   '19':
     name: SPI0 MOSI
     type: GPIO/SPI
@@ -212,14 +172,7 @@ pins:
       bcm: 10
     functions:
       alt0: MCU_SPI0_D0
-      alt1: NA
-      alt2: NA
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_3
-      alt8: NA
   '20':
     name: Ground
     type: GND
@@ -231,14 +184,7 @@ pins:
       bcm: 9
     functions:
       alt0: MCU_SPI0_D1
-      alt1: NA
-      alt2: NA
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_4
-      alt8: NA
   '22':
     name: ''
     type: GPIO
@@ -248,13 +194,9 @@ pins:
     functions:
       alt0: GPMC0_CSn1
       alt1: I2C4_SDA
-      alt2: NA
       alt3: MCASP2_AXR15
-      alt4: NA
-      alt5: NA
       alt6: TRC_DATA16
       alt7: GPIO0_42
-      alt8: NA
   '23':
     name: SPI0 SCLK
     type: GPIO/SPI
@@ -263,14 +205,7 @@ pins:
       bcm: 11
     functions:
       alt0: MCU_SPI0_CLK
-      alt1: NA
-      alt2: NA
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_2
-      alt8: NA
   '24':
     name: SPI0 CE0
     description: SPI Chip Select 0
@@ -280,14 +215,8 @@ pins:
       bcm: 8
     functions:
       alt0: MCU_SPI0_CS0
-      alt1: NA
-      alt2: NA
-      alt3: NA
       alt4: WKUP_TIMER_IO1
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_0
-      alt8: NA
   '25':
     name: Ground
     type: GND
@@ -300,14 +229,8 @@ pins:
       bcm: 7
     functions:
       alt0: WKUP_UART0_RXD
-      alt1: NA
       alt2: MCU_SPI0_CS2
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_9
-      alt8: NA
   '27':
     name: EEPROM SDA
     description: HAT EEPROM i2c Data
@@ -317,14 +240,7 @@ pins:
       bcm: 0
     functions:
       alt0: WKUP_I2C0_SDA
-      alt1: NA
-      alt2: NA
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_20
-      alt8: NA
   '28':
     name: EEPROM SCL
     description: HAT EEPROM i2c Clock
@@ -334,14 +250,7 @@ pins:
       bcm: 1
     functions:
       alt0: WKUP_I2C0_SCL
-      alt1: NA
-      alt2: NA
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: MCU_GPIO0_19
-      alt8: NA
   '29':
     name: ''
     type: GPIO
@@ -350,14 +259,8 @@ pins:
       bcm: 5
     functions:
       alt0: SPI0_CS0
-      alt1: NA
       alt2: EHRPWM0_A
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: GPIO1_15
-      alt8: NA
   '30':
     name: Ground
     type: GND
@@ -371,12 +274,7 @@ pins:
       alt0: SPI0_CLK
       alt1: CP_GEMAC_CPTS0_TS_SYNC
       alt2: EHRPWM1_A
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: GPIO1_17
-      alt8: NA
   '32':
     name: PWM0
     type: GPIO
@@ -389,11 +287,8 @@ pins:
       alt1: CP_GEMAC_CPTS0_TS_COMP
       alt2: EHRPWM0_B
       alt3: ECAP0_IN_APWM_OUT
-      alt4: NA
       alt5: MAIN_ERRORn
-      alt6: NA
       alt7: GPIO1_16
-      alt8: NA
       alt9: EHRPWM_TZn_IN5
   '33':
     name: PWM1
@@ -406,12 +301,7 @@ pins:
       alt0: SPI0_D0
       alt1: CP_GEMAC_CPTS0_HW1TSPUSH
       alt2: EHRPWM1_B
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: GPIO1_18
-      alt8: NA
   '34':
     name: Ground
     type: GND
@@ -426,10 +316,6 @@ pins:
       alt0: MCASP0_AFSX
       alt1: SPI2_CS3
       alt2: AUDIO_EXT_REFCLK1
-      alt3: NA
-      alt4: NA
-      alt5: NA
-      alt6: NA
       alt7: GPIO1_12
       alt8: EQEP1_B
   '36':
@@ -443,9 +329,7 @@ pins:
       alt1: SPI2_D0
       alt2: UART1_CTSn
       alt3: UART6_RXD
-      alt4: NA
       alt5: ECAP1_IN_APWM_OUT
-      alt6: NA
       alt7: GPIO1_7
       alt8: EQEP0_A
   '37':
@@ -456,14 +340,9 @@ pins:
       bcm: 26
     functions:
       alt0: GPMC0_BE1n
-      alt1: NA
-      alt2: NA
       alt3: MCASP2_AXR12
-      alt4: NA
-      alt5: NA
       alt6: TRC_DATA11
       alt7: GPIO0_36
-      alt8: NA
   '38':
     name: PCM DIN
     description: PCM Data-In
@@ -473,11 +352,7 @@ pins:
       bcm: 20
     functions:
       alt0: MCASP0_AXR0
-      alt1: NA
       alt2: AUDIO_EXT_REFCLK0
-      alt3: NA
-      alt4: NA
-      alt5: NA
       alt6: EHRPWM1_B
       alt7: GPIO1_10
       alt8: EQEP0_I
@@ -495,8 +370,6 @@ pins:
       alt0: MCASP0_AXR1
       alt1: SPI2_CS2
       alt2: ECAP1_IN_APWM_OUT
-      alt3: NA
-      alt4: NA
       alt5: MAIN_ERRORn
       alt6: EHRPWM1_A
       alt7: GPIO1_9
