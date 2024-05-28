@@ -31,12 +31,6 @@ pins:
       bcmAlt: 1
     functions:
       alt0: MCU_I2C0_SCL
-      alt1: ''
-      alt2: ''
-      alt3: ''
-      alt4: ''
-      alt5: ''
-      alt6: ''
       alt7: MCU_GPIO0_17
   '6':
     name: Ground
