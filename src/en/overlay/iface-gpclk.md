@@ -1,6 +1,6 @@
 <!--
 ---
-name: GPCLK
+name: GPCLK*
 class: interface
 type: pinout
 description: BeagleY-AI General Purpose Clock
