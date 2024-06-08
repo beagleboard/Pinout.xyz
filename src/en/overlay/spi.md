@@ -4,7 +4,6 @@ name: SPI
 class: interface
 type: pinout
 description: BeagleY-AI SPI pins
-url: https://www.raspberrypi.org/documentation/hardware/raspberrypi/spi/
 pincount: 5
 pin:
   '8':

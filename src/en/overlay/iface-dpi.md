@@ -4,7 +4,6 @@ name: DPI*
 class: interface
 type: pinout
 description: BeagleY-AI DPI Interface
-url: https://www.raspberrypi.org/documentation/hardware/raspberrypi/dpi/
 -->
 # DPI - Display Parallel Interface
 

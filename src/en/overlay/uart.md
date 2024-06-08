@@ -4,7 +4,6 @@ name: UART
 class: interface
 type: pinout
 description: BeagleY-AI UART pins
-url: http://elinux.org/RPi_Serial_Connection
 pincount: 18
 pin:
   '8':
