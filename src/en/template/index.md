@@ -4,6 +4,15 @@
 
 This GPIO Pinout is an interactive reference to the BeagleY-AI GPIO pins, and a guide to the BeagleY-AI's GPIO interfaces. Pinout also includes [hundreds of pinouts for BeagleY-AI add-on boards, HATs and pHATs](/boards).
 
+## Support Pinout.xyz
+
+If you love Pinout, please help me fund new features and improvements:
+
+* via GitHub at [GitHub.com/sponsors/gadgetoid](https://github.com/sponsors/gadgetoid)
+* via Patreon at [Patreon.com/gadgetoid](https://www.patreon.com/gadgetoid)
+
+Every $1 makes all the difference! Thank you.
+
 ## What do these numbers mean?
 
 * GPIO - General Purpose Input/Output, aka "BCM" or "Broadcom". These are the big numbers, e.g. "GPIO 22". You'll use these with RPi.GPIO and GPIO Zero.
