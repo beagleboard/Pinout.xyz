@@ -113,7 +113,8 @@ If you have a question about translations, raise an [issue](https://github.com/p
 
 # Acknowledgement
 
-Maintainers: [@beagleboardorg](https://github.com/Gadgetoid) and [@RogueM](https://github.com/RogueM)
+BeagleY-AI Maintainers: [@beagleboardorg](https://github.com/beagleboard)
+Upstream Maintainers: [@Gadgetoid](https://github.com/Gadgetoid) and [@RogueM](https://github.com/RogueM)
 
 GPIO Zero code examples by: [@bennuttall](https://github.com/bennuttall)
 
