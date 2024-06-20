@@ -17,8 +17,6 @@ run:
   script:
     - pip install -r requirements.txt
     - LANG=en make
-    - LANG=de make
-    - LANG=es make
     - mkdir -p public
     - cp -r output/en/* public/
   artifacts:
